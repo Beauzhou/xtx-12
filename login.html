@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Bunny!</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="renderer" content="webkit">
+  <link rel="shortcut icon" href="../favicon.ico">
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/login.css">
+  <link rel="stylesheet" href="https://at.alicdn.com/t/font_2143783_iq6z4ey5vu.css">
+</head>
+
+<body>
+  <!-- 登录头部 -->
+  <div class="xtx-login-header">
+    <h1 class="logo"></h1>
+    <a class="home" href="./index.html">Enter the Homepage</a>
+  </div>
+  <!-- 登录内容 -->
+  <div class="xtx-login-main">
+    <div class="wrapper">
+      <form action="">
+        <div class="box">
+          <div class="tab-nav">
+            <a href="javascript:;" class="active">Account Login</a>
+            <a href="javascript:;">QR code login</a>
+          </div>
+          <div class="tab-pane">
+            <div class="link">
+              <a href="javascript:;">Mobile phone verification code login</a>
+            </div>
+            <div class="input">
+              <span class="iconfont icon-zhanghao"></span>
+              <input required type="text" placeholder="User name / mobile number" name="username">
+            </div>
+            <div class="input">
+              <span class="iconfont icon-suo"></span>
+              <input required type="password" placeholder="Password" name="password">
+            </div>
+            <div class="agree">
+              <label for="my-checkbox">
+                <input type="checkbox" value="1" id="my-checkbox" class="remember" name="agree">
+                <span class="iconfont icon-xuanze"></span>
+              </label>
+              I agree <a href="javascript:;">《Terms of service》</a href="javascript:;"> and <a>《Terms of service》</a>
+            </div>
+            <div class="button clearfix">
+              <button type="submit" class="dl">Sign in </button>
+              <!-- <a class="dl" href="./center.html">登 录</a> -->
+              <a class="fl" href="./forget.html">Forgot password？</a>
+              <a class="fr" href="./register.html">Free registration</a>
+            </div>
+          </div>
+          <div class="tab-pane" style="display: none;">
+            <img class="code" src="../images/code.png" alt="">
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  <!-- 登录底部 -->
+  <div class="xtx-login-footer">
+    <!-- 版权信息 -->
+    <div class="copyright">
+      <p>
+            <a href="javascript:;">About us</a>
+            <a href="javascript:;">Help center</a>
+            <a href="javascript:;">After-sale service</a>
+            <a href="javascript:;">Delivery and acceptance</a>
+            <a href="javascript:;">Business cooperation</a>
+            <a href="javascript:;">Search recommendation</a>
+            <a href="javascript:;">Friendly links</a>
+          </p>
+      <p>CopyRight &copy; Bunny</p>
+    </div>
+  </div>
+  <script>
+    let remember = document.querySelector('.remember')
+    let uname = document.querySelector('[name=username]')
+    let pass = document.querySelector('[name=password]')
+    let form = document.querySelector('form')
+    form.addEventListener('submit', function (e) {
+      e.preventDefault()
+      if (!remember.checked) {
+        alert('请先同意协议')
+
+        return
+      }
+      let obj = {
+        uname: uname.value,
+        pass: pass.value
+      }
+      localStorage.setItem('data', JSON.stringify(obj))
+      location.href = './index.html'
+    })
+    let data = JSON.parse(localStorage.getItem('data'))
+    if (data) {
+      uname.value = data.uname
+      pass.value = data.pass
+      remember.checked = true
+    }
+
+  </script>
+</body>
+
+</html>

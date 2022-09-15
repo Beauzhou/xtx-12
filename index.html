@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Hare Fresh - Fresh, Beneficial, Fast!</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="renderer" content="webkit">
+  <link rel="shortcut icon" href="./favicon.ico">
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="https://at.alicdn.com/t/font_2143783_iq6z4ey5vu.css">
+  <script>
+    // 检测 userAgent（浏览器信息）
+    !(function () {
+      const userAgent = navigator.userAgent
+      // 验证是否为Android或iPhone
+      const android = userAgent.match(/(Android);?[\s\/]+([\d.]+)?/)
+      const iphone = userAgent.match(/(iPhone\sOS)\s([\d_]+)/)
+
+      // 如果是Android或iPhone，则跳转至移动站点
+      if (android || iphone) {
+        location.href = 'http://m.itcast.cn'
+      }
+
+    })()
+  </script>
+</head>
+
+<body>
+  <!-- 项部导航 -->
+  <div class="xtx_topnav">
+    <div class="wrapper">
+      <!-- 顶部导航 -->
+      <ul class="xtx_navs">
+        <li>
+          <a href=" ">Sign in</a>
+        </li>
+        <li>
+          <a a href="./register.html">Free Register</a>
+        </li>
+        <li>
+          <a a href="./center-order.html">My Order</a>
+        </li>
+        <li>
+          <a a href="./center.html">Member Center</a>
+        </li>
+        <li>
+          <a a href="javascript:;">Help</a>
+        </li>
+        <li>
+          <a a href="javascript:;">Online Service</a>
+        </li>
+        <li>
+          <a href="javascript:;">
+            <i class="mobile sprites"></i>
+            Mobile version
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!-- 头部 -->
+  <div class="xtx_header">
+    <div class="wrapper">
+      <!-- 网站Logo -->
+      <h1 class="xtx_logo"><a href="/">Little rabbit fresh child</a></h1>
+      <!-- 主导航 -->
+      <div class="xtx_navs">
+        <ul class="clearfix">
+          <li>
+            <a a href=" ">Main</a>
+          </li>
+          <li>
+            <a a href="./category01.html">Meat</a>
+          </li>
+          <li>
+            <a a href="./category01.html">Food</a>
+          </li>
+          <li>
+            <a a href="./category01.html">Kitchen</a>
+          </li>
+          <li>
+            <a a href="./category01.html">Electric</a>
+          </li>
+          <li>
+            <a a href="./category01.html">Home</a>
+          </li>
+          <li>
+            <a a href="./category01.html">Wash</a>
+          </li>
+
+        </ul>
+      </div>
+      <!-- 站内搜索 -->
+      <div class="xtx_search clearfix">
+        <!-- 购物车 -->
+        <a href="./cart-none.html" class="xtx_search_cart sprites">
+          <i>2</i>
+        </a>
+        <!-- 搜索框 -->
+        <div class="xtx_search_wrapper">
+          <input type="text" placeholder="search" onclick="location.href='./search.html'">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 分类及焦点图 -->
+  <div class="xtx_entry">
+    <div class="wrapper">
+      <!-- 分类 -->
+      <div class="xtx_category">
+        <!-- 顶级分类 -->
+        <ul class="xtx_category_super">
+          <li>
+            <a href="javascript:;">
+              Fresh
+              <small>Fruits</small>
+              <small>Vegetables</small>
+            </a>
+            <i class="sprites"></i>
+          </li>
+          <li class="active">
+            <a href="javascript:;">
+              Gourmet
+              <small>Pastry</small>
+              <small>Dried fruits</small>
+            </a>
+            <i class="sprites"></i>
+          </li>
+          <li>
+            <a href="javascript:;">
+              Electrical
+              <small>Digital Products</small>
+            </a>
+            <i class="sprites"></i>
+          </li>
+          <li>
+            <a href="javascript:;">
+              Home
+              <small>Bedding</small>
+              <small>Four-piece</small>
+            </a>
+            <i class="sprites"></i>
+          </li>
+          <li>
+            <a href="javascript:;">
+              Washing
+              <small>Shampoo</small>
+              <small>Beauty</small>
+            </a>
+            <i class="sprites"></i>
+          </li>
+          <li>
+            <a href="javascript:;">
+              Pregnancy and Infant
+            </a>
+          </li>
+          <li>
+            <a href="javascript:;">
+              Dining Closet
+            </a>
+            <i class="sprites"></i>
+          </li>
+          <li>
+            <a href="javascript:;">
+              Costumes
+              <small>Menswear</small>
+            </a>
+            <i class="sprites"></i>
+          </li>
+          <li>
+            <a href="javascript:;">
+              Miscellaneous Goods
+            </a>
+            <i class="sprites"></i>
+          </li>
+          <li>
+            <a href="javascript:;">
+              Brand Manufacturing
+            </a>
+            <i class="sprites"></i>
+          </li>
+        </ul>
+        <!-- 子分类 -->
+        <div class="xtx_category_subset">
+
+        </div>
+      </div>
+      <!-- 焦点图 -->
+      <div class="xtx_banner">
+
+        <ul>
+          <li>
+            <a href="javascript:;">
+              <img src="./uploads/banner_1.png" alt="">
+            </a>
+          </li>
+        </ul>
+        <!-- 切换按钮  -->
+        <a href="javascript:;" class="prev sprites"></a>
+        <a href="javascript:;" class="next sprites"></a>
+        <!-- 指示器 -->
+        <div class="indicator">
+          <span></span>
+          <span></span>
+          <span class="active"></span>
+          <span></span>
+          <span></span>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- 新鲜好物 -->
+  <div class="xtx_goods_new xtx_panel">
+    <div class="wrapper">
+      <!-- 面板头部 -->
+      <div class="xtx_panel_header">
+        <h3>Fresh Goodies<small>Fresh out of the oven, quality is reliable</small></h3>
+        <a href="./index-new.html" class="more">
+          View All<i class="sprites"></i>
+        </a>
+      </div>
+      <!-- 商品列表 -->
+      <div class="xtx_panel_goods_1">
+        <a href="javascript:;">
+          <img src="./uploads/new_goods_1.jpg" alt="">
+          <span class="name">wireless vacuum cleaner F8</span>
+          <span class="price"><small>￥</small>899</span>
+        </a>
+        <a href="javascript:;">
+          <img src="./uploads/new_goods_2.jpg" alt="">
+          <span class="name">Surround 3D Air Conditioner</span>
+          <span class="price"><small>￥</small>1299</span>
+        </a>
+        <a href="javascript:;">
+          <img src="./uploads/new_goods_3.jpg" alt="">
+          <span class="name">Soft Sticky Rice in Casserole</span>
+          <span class="price"><small>￥</small>129</span>
+        </a>
+        <a href="javascript:;">
+          <img src="./uploads/new_goods_4.jpg" alt="">
+          <span class="name">Mechanical Smartwatch</span>
+          <span class="price"><small>￥</small>3399</span>
+        </a>
+      </div>
+    </div>
+  </div>
+  <!-- 人气推荐 -->
+  <div class="xtx_goods_popular xtx_panel">
+    <div class="wrapper">
+      <!-- 面板头部 -->
+      <div class="xtx_panel_header">
+        <h3>Popular recommendation<small>Popular models are not to be missed</small></h3>
+      </div>
+      <!-- 商品列表 -->
+      <div class="xtx_panel_goods_1">
+        <a href="javascript:;">
+          <img src="./uploads/popular_1.jpg">
+          <span class="title">Special offer recommendation</span>
+          <span class="alt">I can guess what you need.</span>
+        </a>
+        <a href="./index-hot.html">
+          <img src="./uploads/popular_2.jpg">
+          <span class="title">Explosive recommendation</span>
+          <span class="alt">Recommended Popular Products</span>
+        </a>
+        <a href="./index-one.html">
+          <img src="./uploads/popular_3.jpg">
+          <span class="title">shopping for all scenarios</span>
+          <span class="alt">Editor's recommendation</span>
+        </a>
+        <a href="javascript:;">
+          <img src="./uploads/popular_4.jpg">
+          <span class="title">Coupon Center</span>
+          <span class="alt">Discover more great value coupons</span>
+        </a>
+      </div>
+    </div>
+  </div>
+  <!-- 热门品牌 -->
+  <div class="xtx_goods_brand xtx_panel">
+    <div class="wrapper">
+      <div class="xtx_panel_header">
+        <h3>Popular brands<small>International Classic Quality Assurance</small></h3>
+        <div class="page-bar">
+          <a href="javascript:;" class="prev sprites"></a>
+          <a href="javascript:;" class="next sprites active"></a>
+        </div>
+      </div>
+      <!-- 商品列表 -->
+      <div class="xtx_goods">
+        <ul>
+          <li>
+            <a href="./index-brand.html">
+              <img src="./uploads/brand_goods_1.jpg" alt="">
+            </a>
+            <a href="./brand-list.html">
+              <img src="./uploads/brand_goods_2.jpg" alt="">
+            </a>
+            <a href="javascript:;">
+              <img src="./uploads/brand_goods_3.jpg" alt="">
+            </a>
+            <a href="javascript:;">
+              <img src="./uploads/brand_goods_4.jpg" alt="">
+            </a>
+            <a href="javascript:;">
+              <img src="./uploads/brand_goods_5.jpg" alt="">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- 最新主题 -->
+  <div class="xtx_goods_topic xtx_panel">
+    <div class="wrapper">
+      <div class="xtx_panel_header">
+        <h3>Latest Topics</h3>
+        <a href="javascript:;" class="more">
+          View All<i class="sprites"></i>
+        </a>
+      </div>
+      <div class="xtx_topic">
+        <ul class="clearfix">
+          <li>
+            <a href="javascript:;">
+              <img src="./uploads/topic_goods_1.jpg" alt="">
+              <div class="meta">
+                <p class="title">
+                  Eat these foods
+                  <small>Kitchen, dining, living</small>
+                </p>
+                <span class="price"><small>￥</small>From 29.9</span>
+              </div>
+            </a>
+            <div class="social">
+              <span class="like">
+                <i class="sprites"></i>1220
+              </span>
+              <span class="view">
+                <i class="sprites"></i>1800
+              </span>
+
+              <span class="reply">
+                <i class="sprites"></i>1220
+              </span>
+            </div>
+          </li>
+          <li>
+            <a href="javascript:;">
+              <img src="./uploads/topic_goods_2.jpg" alt="">
+              <div class="meta">
+                <p class="title">
+                  Eat these foods 
+                  <small>Kitchen, dining, living </small>
+                </p>
+                <span class="price"><small>￥</small>From 29.9</span>
+              </div>
+            </a>
+            <div class="social">
+              <span class="liked">
+                <i class="sprites"></i>1220
+              </span>
+              <span class="view">
+                <i class="sprites"></i>1800
+              </span>
+
+              <span class="reply">
+                <i class="sprites"></i>1220
+              </span>
+            </div>
+          </li>
+          <li>
+            <a href="javascript:;">
+              <img src="./uploads/topic_goods_3.jpg" alt="">
+              <div class="meta">
+                <p class="title">
+                  Eat these foods
+                  <small>Kitchen, dining, living</small>
+                </p>
+                <span class="price"><small>￥</small>From 29.9</span>
+              </div>
+            </a>
+            <div class="social">
+              <span class="like">
+                <i class="sprites"></i>1220
+              </span>
+              <span class="view">
+                <i class="sprites"></i>1800
+              </span>
+
+              <span class="reply">
+                <i class="sprites"></i>1220
+              </span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- 公共底部 -->
+  <div class="xtx_footer clearfix">
+    <div class="wrapper">
+      <!-- 联系我们 -->
+      <div class="contact clearfix">
+        <dl>
+          <dt>Customer Service</dt>
+          <dd class="chat">Service</dd>
+          <dd class="feedback">Feedback</dd>
+        </dl>
+        <dl>
+          <dt>Follow us</dt>
+          <dd class="weixin">wechat</dd>
+          <dd class="weibo">weibo</dd>
+        </dl>
+        <dl>
+          <dt>Download App</dt>
+          <dd class="qrcode">
+            <img src="./uploads/qrcode.jpg">
+          </dd>
+          <dd class="download">
+            <span>Scan the QR code</span>
+            <span>Download the app right away</span>
+            <a href="javascript:;">Download page</a>
+          </dd>
+        </dl>
+        <dl>
+          <dt>Service Hotline</dt>
+          <dd class="hotline">
+            400-0000-000
+            <small>Monday-Sunday 8:00-18:00</small>
+          </dd>
+        </dl>
+      </div>
+    </div>
+    <!-- 其它 -->
+    <div class="extra">
+      <div class="wrapper">
+        <!-- 口号 -->
+        <div class="slogan">
+          <a href="javascript:;" class="price">Affordable price</a>
+          <a href="javascript:;" class="express">Fast logistics</a>
+          <a href="javascript:;" class="quality">Fresh Quality</a>
+        </div>
+        <!-- 版权信息 -->
+        <div class="copyright">
+          <p>
+            <a href="javascript:;">about us</a>
+            <a href="javascript:;">help</a>
+            <a href="javascript:;">Services</a>
+            <a href="javascript:;">Distribution</a>
+            <a href="javascript:;">Cooperation</a>
+            <a href="javascript:;">Recommendations</a>
+            <a href="javascript:;">Links</a>
+          </p>
+          <p>CopyRight &copy; Little rabbit fresh child</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    let a = document.querySelector('.xtx_navs li:first-child')
+    let username = JSON.parse(localStorage.getItem('data'))
+    console.log(username)
+    if (!username) {
+      a.innerHTML = `
+          <a href="./login.html">请先登录</a>
+        `
+    }
+    else {
+      a.innerHTML = `
+        <a href="javascript:;">你好 ${username.uname}</a>
+      `
+    }
+
+  </script>
+</body>
+
+</html>
